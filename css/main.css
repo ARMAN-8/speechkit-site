@@ -1,0 +1,158 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h5, h6 {
+    color: rgb(0, 0, 85);
+    font-weight: 500;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ff;
+}
+
+.whiteLink {
+    color: #fff;
+}
+
+.whiteLink:hover {
+    color: #fff;
+}
+
+.textDeckUnderLine {
+    text-decoration: underline;
+}
+
+.tdn {
+    text-decoration: none;
+}
+
+.whiteBtn {
+    color: #000;
+    border-color: #000;
+    background-color: #fff;
+}
+
+.whiteBlue {
+    color: #fff;
+    border-color: #fff;
+}
+
+.whiteBlue:hover {
+    color: #fff;
+    background-color: #6ba7ff;
+    border-color: #6ba7ff;
+}
+
+/*a {
+    text-decoration: none;
+}*/
+
+.topMenuLogo {
+    width: 32px;
+    height: 32px;
+}
+
+.serviceName {
+    margin-left: 8px;
+}
+
+.menuBlock {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+
+}
+
+
+.grid .container, .grid .container-fluid {
+    max-width: 1184px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.baseBlock {
+    margin-top: 48px;
+    padding: 0 0 48px;
+    background-image: url(https://storage.yandexcloud.net/cloud-www-assets/constructor/services/speechkit/background_speechkit_2x.png);
+}
+
+.lightBlueGradient {
+    background-color: #D0DDFF;
+}
+
+.socialMedia {
+    margin-right: 20px;
+    color: #ababab;
+    background-color: #ebebeb;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.socialMedia:hover {
+    color: #000;
+}
+
+.footerUL {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLI {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.underFooter {
+    font-size: 14px;
+}
+
+.a-footer {
+    background-color: #5282ff;
+    color: #fff;
+}
+
+/*sliderHere*/
+.swiperCardHeaderImage1 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_5.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage2 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_8.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage3 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_6.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCard {
+    border-radius: 15px;
+}
