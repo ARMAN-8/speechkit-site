@@ -153,6 +153,22 @@ a:hover {
     color: #fff;
 }
 
+.swiperCardHeaderImage4 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_12.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.swiperCardHeaderImage5 {
+    background-image: url("https://storage.yandexcloud.net/cloud-www-assets/constructor/services/solution_8.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
 .swiperCard {
     border-radius: 15px;
 }
