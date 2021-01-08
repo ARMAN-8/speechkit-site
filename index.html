@@ -205,6 +205,41 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide card swiperCard">
+                                    <div class="">
+                                        <div class="card-header swiperCardHeaderImage4 pt-4 pb-5 px-4">
+                                            <h4>
+                                                <span>Озвучивание курсов<br> и вебинаров</span>
+                                            </h4>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="p-4">
+                                                <p>
+                                                    С помощью синтеза речи вы можете озвучивать тексты для видеороликов
+                                                    или вебинаров, которые собираетесь провести.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide card swiperCard">
+                                    <div class="">
+                                        <div class="card-header swiperCardHeaderImage5 pt-4 pb-5 px-4">
+                                            <h4>
+                                                <span>Повышение доступности для <br> слабовидящих пользователей</span>
+                                            </h4>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="p-4">
+                                                <p>
+                                                    Добавьте в ваш сервис голосовой интерфейс, чтобы пользователям не
+                                                    нужно было читать текст на экране. Так людям с нарушениями зрения
+                                                    будет проще стать вашими клиентами.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="swiper-slide">Slide 4
                                     <!--slide 4 here-->
                                 </div>
@@ -372,7 +407,49 @@
                                         </div>
                                         <div class="tab-pane fade" id="speechRecognition" role="tabpanel"
                                              aria-labelledby="speechRecognition-tab">
-                                            Распознавание речи
+                                            <div id="before" class="beforeSoundRecord">
+                                                <h5>
+                                                    <span>Выберите язык, нажмите «Запустить» и говорите в микрофон</span>
+                                                </h5>
+                                                <div class="row mt-5">
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                        Язык
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select mb-4 w-50"
+                                                                aria-label="Default select example">
+                                                            <option selected>Русский (ru-RU)</option>
+                                                            <option value="1">Английский (en-US)</option>
+                                                            <option value="2">Турецкий (tr-TR)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-primary">Запустить</button>
+                                                </div>
+                                            </div>
+                                            <div class="afterSoundRecord">
+                                                <div class="text-center">
+                                                    <div class="mb-4">
+                                                        00:00 / 01:00
+                                                    </div>
+                                                    <div class="mb-4" style="color: #0000ff">
+                                                        ---------------------------------------
+                                                    </div>
+                                                    <div class="mb-5">
+                                                        <h5>
+                                                            <span class="text-black-50">
+                                                                Говорите
+                                                            </span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button class="btn btn-primary btn-sm">Завершить</button>
+                                                        <!--<button class="btn whiteBtn btn-sm">Изменить язык</button>
+                                                        <button class="btn btn-primary btn-sm">Запустить</button>-->
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -751,5 +828,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
