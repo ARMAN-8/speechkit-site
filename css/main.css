@@ -172,3 +172,34 @@ a:hover {
 .swiperCard {
     border-radius: 15px;
 }
+
+/*docs-speechkit.html*/
+.sideBarTitle {
+    font-weight: 500;
+}
+
+.leftSidebarUl {
+    padding-left: 0;
+    display: block;
+}
+
+.leftSidebarLi {
+    list-style: none;
+    padding-left: 0.15rem;
+}
+.leftSidebarLi:after {
+    list-style: none;
+    background-color: red;
+}
+
+.leftSidebarLink {
+    display: block;
+    font-size: 0.8125rem;
+    line-height: 100%;
+    letter-spacing: 0.0625rem;
+}
+
+.sideBarMenu {
+    width: 1rem;
+    height: 54.5625rem;
+}

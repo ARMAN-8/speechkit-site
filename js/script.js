@@ -7,6 +7,6 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
-var swiperMobile = new Swiper('.swiper-container', {
+/*var swiperMobile = new Swiper('.swiper-container', {
     slidesPerView: 1,
-});
+});*/
