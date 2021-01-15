@@ -55,7 +55,7 @@
     </nav>
 </header>
 <main>
-    <div class="container pt-5 mt-5" style="border: 1px solid red;">
+    <div class="container pt-5 mt-5">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                 <div class="div-fixed position-fixed">
@@ -67,7 +67,7 @@
                                 </a>
                             </div>
                             <div class="leftSidebarDiv">
-                                <ul class="leftSidebarUl">
+                                <ul class="leftSidebarUl scrollspy-example">
                                     <li class="leftSidebarLi">
                                         <a class="leftSidebarLink" href="#">
                                             <span>Сервисы My Cloud</span>
@@ -90,6 +90,74 @@
                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         </ul>
                                     </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLinkDropDown" type="button" id="dropdownMenuButton2"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/right-chevron.png" alt="" class="img-fluid rotate">
+                                            <span>Сопостовление с другими <br> платформами</span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Зоны доступности</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Начало работы</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Стадии готовности сервисов </span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Квоты и лимиты</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>API</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLinkDropDown" type="button" id="dropdownMenuButton3"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="img/right-chevron.png" alt="" class="img-fluid rotate">
+                                            <span>Безопасность и соответствие <br> стандартам</span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Удаление данных <br> пользователей</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>SLA</span>
+                                        </a>
+                                    </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Вопросы и ответы</span>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div>
                                 </div>
@@ -98,11 +166,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" style="border: 1px solid purple;">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                 <div>
                     <div>
                         <h1>
-                            Обзор платформы Yandex.Cloud
+                            <span>Обзор платформы Yandex.Cloud</span>
                         </h1>
                     </div>
                     <div class="mb-4">
@@ -196,11 +264,23 @@
         </div>
     </div>
 </main>
-<footer class="mb-4">
+<footer class="mb-4 fixed-bottom">
     <div class="container-fluid">
+        <hr>
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="underFooter">
+                    <div class="dropdown" style="display: inline-block; margin-right: 15px;">
+                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i> Language
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>Язык</li> <!--Language-->
+                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt="" class="img-fluid lang-img"></a> Русский</li>
+                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt="" class="img-fluid lang-img"></a> English</li>
+                        </ul>
+                    </div>
                     <div style="display: inline-block; margin-right: 15px;">
                         <a href="#" style="text-decoration: none;">
                             Вакансии
