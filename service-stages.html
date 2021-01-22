@@ -54,7 +54,7 @@
         </div>
     </nav>
 </header>
-<main>
+<main class="mb-5">
     <div class="container pt-5 mt-5">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
@@ -243,95 +243,71 @@
             </div>
             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 MAIN_PAGE pt-5" style="border-left: 1px solid #c4c4c4;">
                 <div class="pt-5" style="padding-left: 50px;">
-                    <div>
+                    <div class="mb-3">
+                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Стадии готовности сервисов</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="mb-2">
                         <h1>
-                            <span>Обзор платформы Yandex.Cloud</span>
+                            <span>Стадии готовности сервисов</span>
                         </h1>
                     </div>
-                    <div class="mb-4">
-                        <p>
-                            Yandex.Cloud — это набор связанных сервисов, которые помогут вам быстро и безопасно взять в
-                            аренду вычислительные мощности в тех объемах, в которых это необходимо. При этом доступ к
-                            вычислительным мощностям вы получаете через интернет. Такой подход к потреблению
-                            вычислительных ресурсов называется облачные вычисления.
-                        </p>
+                    <div>
+                        <table class="table table-striped p-3" style="border-radius: 10px;">
+                            <tbody>
+                            <tr>
+                                <td>Стадия</td>
+                                <td>Описание</td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Сервисы на стадии Preview подойдут для разработчиков, которые готовы
+                                    использовать их в разработке своих приложений или в тестовом окружении. Для
+                                    Preview-сервисов не действует соглашение об уровне обслуживания (SLA), и их
+                                    использование не тарифицируется.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Общедоступная версия (General Availability)</td>
+                                <td colspan="2">Общедоступные версии сервисов доступны всем пользователям и
+                                    могут быть полноценно использованы для решения ваших задач. Для этих
+                                    сервисов действуют тарифы и соглашение об уровне обслуживания (SLA).
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="mb-4">
+                    <div>
                         <p>
-                            Облачные вычисления заменяют и дополняют традиционные дата-центры, расположенные на
-                            территории потребителя. Yandex.Cloud берет на себя задачи по поддержанию работоспособности и
-                            производительности аппаратного и программного обеспечения облачной платформы.
+                            Подробно условия использования сервисов на разных стадиях готовности см. в документе <a
+                                href="#" class="link-primary">Специальные условия использования.</a>
+
                         </p>
-                    </div>
-                    <div class="mb-4">
-                        <p>
-                            Yandex.Cloud предлагает вам различные категории облачных ресурсов: например, виртуальные
-                            машины, диски, базы данных. Управлять ресурсами каждой категории можно с помощью
-                            соответствующего сервиса.
-                        </p>
-                    </div>
-                    <div class="mb-4">
-                        Инфраструктура Yandex.Cloud <a href="#" class="link-primary">защищена</a> в соответствии с
-                        ФЗ-152.
                     </div>
                     <div class="row my-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="main-links">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p>
+                                <span class="text-black-50">Предыдущая</span>
+                            </p>
+                            <p>
                                 <a href="#">
-                                    <h4><span class="link-primary">Сервисы Yandex.Cloud</span></h4>
+                                    <i class="fas fa-arrow-left"></i> Начало работы
                                 </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Зоны доступности</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Стадии готовности сервисов</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">API</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Вопросы и ответы</span></h4>
-                                </a>
-                            </div>
-                            <hr>
+                            </p>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="main-links">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
+                            <p>
+                                <span class="text-black-50">Следующая</span>
+                            </p>
+                            <p>
                                 <a href="#">
-                                    <h4><span class="link-primary">Мобильное приложение</span></h4>
+                                    Квоты и лимиты <i class="fas fa-arrow-right"></i>
                                 </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Начало работы</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Квоты и лимиты</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Соглашение об уровне обслуживания</span></h4>
-                                </a>
-                            </div>
-                            <hr>
+                            </p>
                         </div>
                     </div>
                 </div>

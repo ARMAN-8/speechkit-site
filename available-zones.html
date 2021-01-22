@@ -17,7 +17,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <img src="img/navbar-logo.png" alt="" class="img-fluid topMenuLogo">
             <a class="navbar-brand" href="#">
@@ -55,10 +55,10 @@
     </nav>
 </header>
 <main>
-    <div class="container pt-5 mt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
-                <div class="div-fixed position-fixed">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
+                <div class="div-fixed position-fixed pt-5">
                     <div class="">
                         <div class="sideBarMenu">
                             <div>
@@ -79,28 +79,119 @@
                                         </a>
                                     </li>
                                     <li class="leftSidebarLi">
-                                        <a class="leftSidebarLinkDropDown" type="button" id="dropdownMenuButton"
-                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="img/right-chevron.png" alt="" class="img-fluid rotate">
-                                            <span>Мобильное приложение</span>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="leftSidebarLi">
-                                        <a class="leftSidebarLinkDropDown" type="button" id="dropdownMenuButton2"
-                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="img/right-chevron.png" alt="" class="img-fluid rotate">
-                                            <span>Сопостовление с другими <br> платформами</span>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseOne" aria-expanded="false"
+                                                       aria-controls="collapseOne">
+                                                        Мобильное приложение
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Обзор</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Для Android</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Для Ios</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseTwo" aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+                                                        Сопоставление с другими <br> платформами
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Обзор</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Сопоставление с <br> Amazon Web Services</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Сопоставление с <br> Google Cloud Platform</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Сопоставление с <br> Microsoft Azure</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <a class="accordion-button accordion-menu-btn collapsed"
+                                                       type="button" data-bs-toggle="collapse"
+                                                       data-bs-target="#collapseThree" aria-expanded="false"
+                                                       aria-controls="collapseThree">
+                                                        Безопасность и <br> соответствие стандартам
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body menu-accordion-body">
+                                                        <ul style="padding-left: 0;">
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Обзор</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Архитектура платформы</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Ключевые принципы <br> безопасности</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Разделение <br> ответственности за <br> обеспечение безопасности</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="leftSidebarLi">
+                                                                <a class="leftSidebarLink" href="#">
+                                                                    <span>Соответствие требованиям</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li class="leftSidebarLi">
                                         <a class="leftSidebarLink" href="#">
@@ -114,7 +205,7 @@
                                     </li>
                                     <li class="leftSidebarLi">
                                         <a class="leftSidebarLink" href="#">
-                                            <span>Стадии готовности сервисов </span>
+                                            <span>Стадии готовности сервисов</span>
                                         </a>
                                     </li>
                                     <li class="leftSidebarLi">
@@ -127,27 +218,6 @@
                                             <span>API</span>
                                         </a>
                                     </li>
-
-
-                                    <li class="leftSidebarLi">
-                                        <a class="leftSidebarLinkDropDown" type="button" id="dropdownMenuButton3"
-                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="img/right-chevron.png" alt="" class="img-fluid rotate">
-                                            <span>Безопасность и соответствие <br> стандартам</span>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-
-
-                                    <li class="leftSidebarLi">
-                                        <a class="leftSidebarLink" href="#">
-                                            <span>Удаление данных <br> пользователей</span>
-                                        </a>
-                                    </li>
                                     <li class="leftSidebarLi">
                                         <a class="leftSidebarLink" href="#">
                                             <span>SLA</span>
@@ -158,6 +228,11 @@
                                             <span>Вопросы и ответы</span>
                                         </a>
                                     </li>
+                                    <li class="leftSidebarLi">
+                                        <a class="leftSidebarLink" href="#">
+                                            <span>Удаление данных пользователей</span>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div>
                                 </div>
@@ -166,8 +241,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                <div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 MAIN_PAGE pt-5" style="border-left: 1px solid #c4c4c4;">
+                <div class="pt-5" style="padding-left: 50px;">
                     <div class="mb-3">
                         <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -259,26 +334,53 @@
                             </p>
                         </div>
                     </div>
+                    <div class="row my-5">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p>
+                                <span class="text-black-50">Предыдущая</span>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    <i class="fas fa-arrow-left"></i> Сопоставление с Microsoft Azure
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
+                            <p>
+                                <span class="text-black-50">Следующая</span>
+                            </p>
+                            <p>
+                                <a href="#">
+                                    Начало работы <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-<footer class="mb-4 fixed-bottom">
+<footer class="pb-4"><!--fixed-bottom-->
     <div class="container-fluid">
-        <hr>
-        <div class="row">
+        <hr style="margin: 0;">
+        <div class="row mt-4">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="underFooter">
                     <div class="dropdown" style="display: inline-block; margin-right: 15px;">
-                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink"
+                           data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-globe"></i> Language
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li>Язык</li> <!--Language-->
-                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt="" class="img-fluid lang-img"></a> Русский</li>
-                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt="" class="img-fluid lang-img"></a> English</li>
+                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> Русский
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> English
+                            </li>
                         </ul>
                     </div>
                     <div style="display: inline-block; margin-right: 15px;">

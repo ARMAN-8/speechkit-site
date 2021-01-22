@@ -14,6 +14,7 @@
     <!--swiperJS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
 <header>
@@ -55,7 +56,7 @@
     </nav>
 </header>
 <main>
-    <div class="container pt-5 mt-5">
+    <div class="container main-page">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
                 <div class="div-fixed position-fixed pt-5">
@@ -243,95 +244,117 @@
             </div>
             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 MAIN_PAGE pt-5" style="border-left: 1px solid #c4c4c4;">
                 <div class="pt-5" style="padding-left: 50px;">
-                    <div>
+                    <div class="mb-3">
+                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Начало работы</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="mb-2">
                         <h1>
-                            <span>Обзор платформы Yandex.Cloud</span>
+                            <span>API сервисов Yandex.Cloud</span>
                         </h1>
                     </div>
-                    <div class="mb-4">
+                    <div>
                         <p>
-                            Yandex.Cloud — это набор связанных сервисов, которые помогут вам быстро и безопасно взять в
-                            аренду вычислительные мощности в тех объемах, в которых это необходимо. При этом доступ к
-                            вычислительным мощностям вы получаете через интернет. Такой подход к потреблению
-                            вычислительных ресурсов называется облачные вычисления.
+                            Сервисы Yandex.Cloud дают вам возможность создавать системы автоматизации, плагины и другие
+                            приложения для управления облачными ресурсами на базе API.
+                        </p>
+                        <p>
+                            Подробнее читайте в документе <a href="#" class="link-primary">Концепции API
+                            Yandex.Cloud.</a>
                         </p>
                     </div>
-                    <div class="mb-4">
-                        <p>
-                            Облачные вычисления заменяют и дополняют традиционные дата-центры, расположенные на
-                            территории потребителя. Yandex.Cloud берет на себя задачи по поддержанию работоспособности и
-                            производительности аппаратного и программного обеспечения облачной платформы.
-                        </p>
-                    </div>
-                    <div class="mb-4">
-                        <p>
-                            Yandex.Cloud предлагает вам различные категории облачных ресурсов: например, виртуальные
-                            машины, диски, базы данных. Управлять ресурсами каждой категории можно с помощью
-                            соответствующего сервиса.
-                        </p>
-                    </div>
-                    <div class="mb-4">
-                        Инфраструктура Yandex.Cloud <a href="#" class="link-primary">защищена</a> в соответствии с
-                        ФЗ-152.
+                    <div class="mt-4">
+                        <div class="mb-4">
+                            <h5><span>Справочники API сервисов Yandex.Cloud</span></h5>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Compute Cloud</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Object Storage</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Virtual Private Cloud</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Identity and Access Management</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="">Yandex Resource Manager</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Load Balancer</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Container Registry</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Managed Service for Kubernetes</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Monitoring</a>
+                                </li>
+                                <li>
+                                    Сервисы баз данных:
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for ClickHouse</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for MongoDB</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for MySQL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for PostgreSQL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for Redis</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex Message Queue</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex SpeechKit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex Translate</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex Vision</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row my-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="main-links">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <p>
+                                <span class="text-black-50">Предыдущая</span>
+                            </p>
+                            <p>
                                 <a href="#">
-                                    <h4><span class="link-primary">Сервисы Yandex.Cloud</span></h4>
+                                    <i class="fas fa-arrow-left"></i> Квоты и лимиты
                                 </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Зоны доступности</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Стадии готовности сервисов</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">API</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Вопросы и ответы</span></h4>
-                                </a>
-                            </div>
-                            <hr>
+                            </p>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="main-links">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
+                            <p>
+                                <span class="text-black-50">Следующая</span>
+                            </p>
+                            <p>
                                 <a href="#">
-                                    <h4><span class="link-primary">Мобильное приложение</span></h4>
+                                    Обзор <i class="fas fa-arrow-right"></i>
                                 </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Начало работы</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Квоты и лимиты</span></h4>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class="main-links">
-                                <a href="#">
-                                    <h4><span class="link-primary">Соглашение об уровне обслуживания</span></h4>
-                                </a>
-                            </div>
-                            <hr>
+                            </p>
                         </div>
                     </div>
                 </div>
