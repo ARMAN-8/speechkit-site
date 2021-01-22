@@ -54,7 +54,7 @@
         </div>
     </nav>
 </header>
-<main>
+<main class="">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
@@ -247,71 +247,107 @@
                         <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Зоны доступности</li>
+                                <li class="breadcrumb-item active" aria-current="page">Начало работы</li>
                             </ol>
                         </nav>
                     </div>
                     <div class="mb-2">
                         <h1>
-                            <span>Зоны доступности</span>
+                            <span>Начало работы</span>
                         </h1>
                     </div>
                     <div>
                         <p>
-                            Платформа Yandex.Cloud на первом этапе размещается в трех дата-центрах Яндекса,
-                            расположенных во Владимирской, Рязанской и Московской областях. Инфраструктура Yandex.Cloud
-                            в каждом из дата-центров называется <i>зоной доступности</i>. Каждая зона изолирована от
-                            аппаратных
-                            и программных сбоев в других зонах доступности. Разворачивая ваши приложения сразу в
-                            нескольких зонах, вы обеспечите отказоустойчивость своих приложений и значительно снизите
-                            вероятность потери данных.
+                            Чтобы начать знакомство с Yandex.Cloud, воспользуйтесь инструкциями:
                         </p>
-                        <p>
-                            Вы можете размещать свои ресурсы в следующих зонах доступности:
-                        </p>
+                    </div>
+                    <div>
                         <ul>
-                            <li>
-                                <code style="background: #edf0f3; color: #000; padding: 2px; border-radius: 5px;">
-                                    ru-central1-a;
-                                </code>
-                            </li>
-                            <li>
-                                <code style="background: #edf0f3; color: #000; padding: 2px; border-radius: 5px;">
-                                    ru-central1-b;
-                                </code>
-                            </li>
-                            <li>
-                                <code style="background: #edf0f3; color: #000; padding: 2px; border-radius: 5px;">
-                                    ru-central1-c.
-                                </code>
+                            <li class="mb-2"><a href="#" class="link-primary">Зарегистрироваться и создать первый
+                                платежный аккаунт</a></li>
+                            <li>Начать работу с сервисами:</li>
+                            <li style="list-style: none">
+                                <ul class="mt-2">
+                                    <li>
+                                        Создайте виртуальную машину в Compute Cloud:
+                                    </li>
+                                    <li style="list-style: none">
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Linux</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Windows</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Группу виртуальных
+                                                машин</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Используйте сервисы для хранения:
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Разместите файлы в
+                                                Object Storage.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Загрузите
+                                                Docker-образ в реестр в Container Registry.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Настройте сети:
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Создайте облачную
+                                                сеть в Virtual Private Cloud.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Настройте
+                                                балансировщик в Load Balancer.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Управляйте доступом:
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Добавьте
+                                                пользователей и назначьте им роли в IAM.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Создайте новый
+                                                каталог в облаке и предоставьте к нему доступ в Resource Manager.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Создайте кластер баз данных:
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">ClickHouse.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">MongoDB.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">MySQL.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Redis</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">PostgreSQL.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Используйте машинное обучение:
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Преобразуйте текст в
+                                                речь и наоборот с помощью SpeechKit.</a></li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Переведите текст в
+                                                Translate.</a>
+                                            </li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Анализируйте
+                                                изображение с помощью компьютерного зрения в Vision.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Прочее:
+                                        <ul>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Создайте кластер
+                                                Kubernetes.</a>
+                                            </li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Настройте обмен
+                                                сообщениями между приложениями в Message Queue.</a>
+                                            </li>
+                                            <li class="sq-outside"><a href="#" class="link-primary">Визуализируйте
+                                                данные в DataLens.</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
-                    <div class="mb-4">
-                        <div class="card own-info-alert">
-                            <div class="card-body">
-                                <div class="d-inline-block">
-                                    <p><img src="img/reverse-alert.svg" alt="" class="img-fluid d-inline-block"/>
-                                        <strong class="">Примечание</strong></p>
-                                    <p class="alert-under-text">
-                                        Когда появляются новые зоны доступности или изменяется расположение старых,
-                                        Yandex.Cloud уведомляет об этом всех клиентов.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <p>
-                            Ресурсы в Yandex.Cloud делятся на зональные, привязанные к зоне доступности, и глобальные,
-                            не зависящие от зоны.
-                        </p>
-                        <p>
-                            Зональными ресурсами являются, например, <a href="#" class="link-primary">виртуальная машина</a> и <a
-                                href="#" class="link-primary">диск</a>. Примеры глобальных
-                            ресурсов — <a href="#" class="link-primary">облачная сеть</a> и <a href="#" class="link-primary">бакет</a>.
-                        </p>
-                    </div>
                     <div class="row my-5">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                             <p>
@@ -319,7 +355,7 @@
                             </p>
                             <p>
                                 <a href="#">
-                                    <i class="fas fa-arrow-left"></i> Сопоставление с Microsoft Azure
+                                    <i class="fas fa-arrow-left"></i> Зоны доступности
                                 </a>
                             </p>
                         </div>
@@ -329,29 +365,7 @@
                             </p>
                             <p>
                                 <a href="#">
-                                    Начало работы <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row my-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <p>
-                                <span class="text-black-50">Предыдущая</span>
-                            </p>
-                            <p>
-                                <a href="#">
-                                    <i class="fas fa-arrow-left"></i> Сопоставление с Microsoft Azure
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
-                            <p>
-                                <span class="text-black-50">Следующая</span>
-                            </p>
-                            <p>
-                                <a href="#">
-                                    Начало работы <i class="fas fa-arrow-right"></i>
+                                    Стадии готовности сервисов <i class="fas fa-arrow-right"></i>
                                 </a>
                             </p>
                         </div>

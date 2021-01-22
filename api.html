@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SpeechKit</title>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -14,6 +14,7 @@
     <!--swiperJS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
 <header>
@@ -55,7 +56,7 @@
     </nav>
 </header>
 <main>
-    <div class="container">
+    <div class="container main-page">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
                 <div class="div-fixed position-fixed pt-5">
@@ -247,70 +248,92 @@
                         <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Зоны доступности</li>
+                                <li class="breadcrumb-item active" aria-current="page">Начало работы</li>
                             </ol>
                         </nav>
                     </div>
                     <div class="mb-2">
                         <h1>
-                            <span>Зоны доступности</span>
+                            <span>API сервисов Yandex.Cloud</span>
                         </h1>
                     </div>
                     <div>
                         <p>
-                            Платформа Yandex.Cloud на первом этапе размещается в трех дата-центрах Яндекса,
-                            расположенных во Владимирской, Рязанской и Московской областях. Инфраструктура Yandex.Cloud
-                            в каждом из дата-центров называется <i>зоной доступности</i>. Каждая зона изолирована от
-                            аппаратных
-                            и программных сбоев в других зонах доступности. Разворачивая ваши приложения сразу в
-                            нескольких зонах, вы обеспечите отказоустойчивость своих приложений и значительно снизите
-                            вероятность потери данных.
+                            Сервисы Yandex.Cloud дают вам возможность создавать системы автоматизации, плагины и другие
+                            приложения для управления облачными ресурсами на базе API.
                         </p>
                         <p>
-                            Вы можете размещать свои ресурсы в следующих зонах доступности:
+                            Подробнее читайте в документе <a href="#" class="link-primary">Концепции API
+                            Yandex.Cloud.</a>
                         </p>
-                        <ul>
-                            <li>
-                                <code style="background: #edf0f3; color: #000; padding: 2px; border-radius: 5px;">
-                                    ru-central1-a;
-                                </code>
-                            </li>
-                            <li>
-                                <code style="background: #edf0f3; color: #000; padding: 2px; border-radius: 5px;">
-                                    ru-central1-b;
-                                </code>
-                            </li>
-                            <li>
-                                <code style="background: #edf0f3; color: #000; padding: 2px; border-radius: 5px;">
-                                    ru-central1-c.
-                                </code>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="mb-4">
-                        <div class="card own-info-alert">
-                            <div class="card-body">
-                                <div class="d-inline-block">
-                                    <p><img src="img/reverse-alert.svg" alt="" class="img-fluid d-inline-block"/>
-                                        <strong class="">Примечание</strong></p>
-                                    <p class="alert-under-text">
-                                        Когда появляются новые зоны доступности или изменяется расположение старых,
-                                        Yandex.Cloud уведомляет об этом всех клиентов.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="mt-4">
+                        <div class="mb-4">
+                            <h5><span>Справочники API сервисов Yandex.Cloud</span></h5>
                         </div>
-                    </div>
-                    <div class="mb-4">
-                        <p>
-                            Ресурсы в Yandex.Cloud делятся на зональные, привязанные к зоне доступности, и глобальные,
-                            не зависящие от зоны.
-                        </p>
-                        <p>
-                            Зональными ресурсами являются, например, <a href="#" class="link-primary">виртуальная машина</a> и <a
-                                href="#" class="link-primary">диск</a>. Примеры глобальных
-                            ресурсов — <a href="#" class="link-primary">облачная сеть</a> и <a href="#" class="link-primary">бакет</a>.
-                        </p>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Compute Cloud</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Object Storage</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Virtual Private Cloud</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Identity and Access Management</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="">Yandex Resource Manager</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Load Balancer</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Container Registry</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Managed Service for Kubernetes</a>
+                                </li>
+                                <li>
+                                    <a class="link-primary" href="#">Yandex Monitoring</a>
+                                </li>
+                                <li>
+                                    Сервисы баз данных:
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for ClickHouse</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for MongoDB</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for MySQL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for PostgreSQL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="link-primary">Yandex Managed Service for Redis</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex Message Queue</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex SpeechKit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex Translate</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-primary">Yandex Vision</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row my-5">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -319,7 +342,7 @@
                             </p>
                             <p>
                                 <a href="#">
-                                    <i class="fas fa-arrow-left"></i> Сопоставление с Microsoft Azure
+                                    <i class="fas fa-arrow-left"></i> Квоты и лимиты
                                 </a>
                             </p>
                         </div>
@@ -329,29 +352,7 @@
                             </p>
                             <p>
                                 <a href="#">
-                                    Начало работы <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row my-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <p>
-                                <span class="text-black-50">Предыдущая</span>
-                            </p>
-                            <p>
-                                <a href="#">
-                                    <i class="fas fa-arrow-left"></i> Сопоставление с Microsoft Azure
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-breadcrumb-left">
-                            <p>
-                                <span class="text-black-50">Следующая</span>
-                            </p>
-                            <p>
-                                <a href="#">
-                                    Начало работы <i class="fas fa-arrow-right"></i>
+                                    Обзор <i class="fas fa-arrow-right"></i>
                                 </a>
                             </p>
                         </div>
