@@ -43,8 +43,14 @@ a:hover {
 
 .whiteBtn {
     color: #000;
-    border-color: #000;
+    border-color: #ebebeb;
     background-color: #fff;
+}
+
+.rec-float-btn {
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 .whiteBlue {
@@ -180,7 +186,7 @@ a:hover {
 
 /*docs-speechkit.html*/
 .sideBarTitle {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .leftSidebarUl {
@@ -322,6 +328,44 @@ a:hover {
 
 .accordion-collapse {
     border: 0;
+}
+
+.accordion-button-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.code-span {
+    background: #e6e6e6;
+    color: #506875;
+}
+
+.code-grey-bg {
+    background: #dadada;
+    color: #000;
+}
+.div-big-grey {
+    background: #dadada;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.notes-blue {
+    background: rgba(2,123,243,.08);
+    display: flex;
+    border-radius: 15px;
+}
+.notes-yellow {
+    background: rgba(255,136,0,.15);
+    display: flex;
+    border-radius: 15px;
+}
+
+.blockquote {
+    border-left: 3px solid #027bf3;
+    padding-left: 12px;
+    position: relative;
+    font-size: 16px;
 }
 
 /*footer  {
