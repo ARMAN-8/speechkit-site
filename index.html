@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SpeechKit</title>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -17,7 +17,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
             <img src="img/navbar-logo.png" alt="" class="img-fluid topMenuLogo">
             <a class="navbar-brand" href="#">
@@ -148,7 +148,7 @@
                         <!-- Swiper -->
                         <div class="swiper-container">
                             <div class="card-deck swiper-wrapper">
-                                <div class="swiper-slide card swiperCard">
+                                <div class="card swiper-slide swiperCard shadow rounded border-1">
                                     <div class="">
                                         <div class="card-header swiperCardHeaderImage1 pt-4 pb-5 px-4">
                                             <h4>
@@ -240,15 +240,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">Slide 4
-                                    <!--slide 4 here-->
-                                </div>
-                                <div class="swiper-slide">Slide 5</div>
-                                <div class="swiper-slide">Slide 6</div>
-                                <div class="swiper-slide">Slide 7</div>
-                                <div class="swiper-slide">Slide 8</div>
-                                <div class="swiper-slide">Slide 9</div>
-                                <div class="swiper-slide">Slide 10</div>
+
                             </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
@@ -257,28 +249,30 @@
                     </div>
                     <!--thirdBlock-->
                     <div class="mt-5">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-0 lightBlueGradient">
-                                <div class="card-body m-3">
-                                    <h2 class="mb-4">
+                        <div class="card shadow mb-5 bg-white rounded">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-0 lightBlueGradient">
+                                    <div class="card-body m-3">
+                                        <h2 class="mb-4">
                                     <span>
                                         Готовые бизнес-решения на основе My SpeechKit
                                     </span>
-                                    </h2>
-                                    <p>
-                                        Узнайте о задачах, которые голосовые роботы эффективно решают уже сейчас.
-                                    </p>
-                                    <button class="btn whiteBtn">Подобрать решение</button>
+                                        </h2>
+                                        <p>
+                                            Узнайте о задачах, которые голосовые роботы эффективно решают уже сейчас.
+                                        </p>
+                                        <button class="btn whiteBtn">Подобрать решение</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-0">
-                                <img src="https://storage.yandexcloud.net/cloud-www-assets/constructor/banners/speechkit/speechkit_pro_%23CCDBFA.png"
-                                     alt="" class="img-fluid">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-0">
+                                    <img src="https://storage.yandexcloud.net/cloud-www-assets/constructor/banners/speechkit/speechkit_pro_%23CCDBFA.png"
+                                         alt="" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="mt-5">
-                        <div class="card">
+                        <div class="card shadow mb-5 bg-white rounded" style="border: 0;">
                             <div class="card-body m-3">
                                 <h2>
                                     <span>
@@ -465,7 +459,7 @@
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         <div>
-                            <div class="card my-4">
+                            <div class="card shadow mb-5 bg-white rounded my-4" style="border: 0;">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                         <div class="card-body p-3">
@@ -522,10 +516,11 @@
                                 </h2>
                             </div>
                             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                                <div class="accordion" id="accordionExample">
+                                <div class="accordion" id="accordionExample">*
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button h4" type="button" data-bs-toggle="collapse"
+                                            <button class="accordion-button accordion-button-text" type="button"
+                                                    data-bs-toggle="collapse"
                                                     data-bs-target="#collapseOne" aria-expanded="true"
                                                     aria-controls="collapseOne">
                                                 Как использовать SpeechKit?
@@ -534,16 +529,12 @@
                                         <div id="collapseOne" class="accordion-collapse collapse show"
                                              aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <strong>This is the first item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
+                                                <p>Сервис работает через HTTP API. Всё, что нужно для работы, вы сможете
+                                                    найти в документации. Начните знакомство с сервисом самостоятельно
+                                                    или обратитесь к нам. Мы подберём партнёра, который разработает
+                                                    решение специально для вашей задачи.</p>
                                                 <div class="mt-4">
-                                                    <a href="#" style="text-decoration: none;">
+                                                    <a class="link-primary" href="#" style="text-decoration: none;">
                                                         В документацию
                                                         <i class="fas fa-chevron-right"></i>
                                                     </a>
@@ -553,7 +544,8 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
+                                            <button class="accordion-button accordion-button-text collapsed"
+                                                    type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
                                                 Зачем регистрироваться в консоли Yandex.Cloud?
@@ -562,16 +554,12 @@
                                         <div id="collapseTwo" class="accordion-collapse collapse"
                                              aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <strong>This is the second item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
+                                                <p>Для использования API необходимо получить идентификатор (IAM-токен
+                                                    или API-ключ). Этот идентификатор привязан к учетной записи в
+                                                    облаке.
+                                                </p>
                                                 <div class="mt-4">
-                                                    <a href="#" style="text-decoration: none;">
+                                                    <a class="link-primary" href="#" style="text-decoration: none;">
                                                         В документацию
                                                         <i class="fas fa-chevron-right"></i>
                                                     </a>
@@ -581,7 +569,8 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
+                                            <button class="accordion-button accordion-button-text collapsed"
+                                                    type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
                                                 Что такое модель распознавания?
@@ -590,16 +579,16 @@
                                         <div id="collapseThree" class="accordion-collapse collapse"
                                              aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <strong>This is the third item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
+                                                <p>
+                                                    Модели распознавания — нейронная сеть, которая обучена распознавать
+                                                    речь
+                                                    на определенном языке. Для обучения моделей используются массивы
+                                                    данных
+                                                    из сервисов и приложений Яндекса. Это позволяет постоянно улучшать
+                                                    качество распознавания.
+                                                </p>
                                                 <div class="mt-4">
-                                                    <a href="#" style="text-decoration: none;">
+                                                    <a class="link-primary" href="#" style="text-decoration: none;">
                                                         В документацию
                                                         <i class="fas fa-chevron-right"></i>
                                                     </a>
@@ -612,23 +601,229 @@
                         </div>
                     </div>
                     <div class="my-5">
-                        <div class="card">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="border: 0;">
                             <div class="card-body m-3">
-                                <h2>
+                                <h2 class="mb-4">
                                     <span>
                                         Рассчитать стоимость
                                     </span>
                                 </h2>
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12"
+                                         style="border-right: 1px solid #ebebeb; padding-right: 40px;">
+                                        <div class="">
+                                            <h5>
+                                                <span>Speechkit</span>
+                                            </h5>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                Технология
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <select class="form-select form-select-sm"
+                                                        aria-label="Default select example">
+                                                    <option selected>Синтез речи</option>
+                                                    <option value="1">Распознавание речи</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                Тип голоса <a href="#" data-bs-toggle="tooltip"
+                                                              title="Премиум-голоса позволяют получить более естественное звучание и интонации, присущие речи живого человека."><i
+                                                    class="fas fa-question-circle"></i></a>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <select class="form-select form-select-sm"
+                                                        aria-label="Default select example">
+                                                    <option selected>Премиум</option>
+                                                    <option value="1">Стандарт</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                Количество символов
+                                                <a href="#" data-bs-toggle="tooltip"
+                                                   title="Стоимость рассчитывается, исходя из суммарного количества символов, которые были отправлены для генерации речи. Количество символов в запросе определяется с учётом пробелов и служебных символов. Стоимость пустого запроса равна стоимости одного символа."><i
+                                                        class="fas fa-question-circle"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <div class="mb-3">
+                                                    <input type="number" class="form-control form-control-sm"
+                                                           id="numberInc1" placeholder="10 000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <button class="btn whiteBtn btn-sm"><i
+                                                    class="fas fa-plus-circle link-primary"></i> Добавить технологию
+                                            </button>
+                                        </div>
+                                        <p class="text-black-50 mt-4">
+                                            <small>
+                                                Все цены указаны с НДС.
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="padding-left: 40px;">
+                                        <div class="mb-4">
+                                            <h5>
+                                                <span>Итого:</span>
+                                            </h5>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                                                SpeechKit
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                                12 <i class="fas fa-ruble-sign fw-normal" style="font-size: 12px;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                                                SpeechKit — синтез речи, премиум голоса
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                                12 <i class="fas fa-ruble-sign fw-normal" style="font-size: 12px;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                                                <b>12 <i class="fas fa-ruble-sign fw-normal"
+                                                         style="font-size: 12px;"></i></b>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                                <select class="form-select form-select-sm"
+                                                        aria-label="Default select example">
+                                                    <option value="1">В день</option>
+                                                    <option selected>В месяц</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="my-4">
+                                            <button class="btn btn-primary btn-sm w-100 my-2">Перейти в консоль</button>
+                                            <button class="btn whiteBtn btn-sm w-100">Большой калькулятор</button>
+                                        </div>
+                                        <p class="text-black-50">
+                                            <small>
+                                                Подробнее о тарифах можно узнать в <br>
+                                                <a class="text-black-50" href="#" style="text-decoration: underline;">документации</a>
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="my-5">
-                        <a href="#" class="h2 text-dark" style="text-decoration: none;">
-                            Мероприятия и вебинары
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
+                        <div class="my-5">
+                            <a href="#" class="h2 text-dark" style="text-decoration: none;">
+                                Мероприятия и вебинары
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
                         <div>
-                            <!--slider here-->
+                            <!--swiper-->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="card card-events swiper-slide">
+                                        <a href="#">
+                                            <img class="img-fluid events-img"
+                                                 src="https://yc-www-community-images.storage.yandexcloud.net/181021_Yandex_1245.jpg"
+                                                 alt=""/>
+                                            <button class="btn btn-warning btn-sm rec-float-btn">Запись</button>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="text-black-50">
+                                                Вебинар
+                                            </div>
+                                            <div class="h5">
+                                                Речевые технологий в деле
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-events swiper-slide">
+                                        <a href="#">
+                                            <img class="img-fluid events-img"
+                                                 src="https://yc-www-community-images.storage.yandexcloud.net/181110_Yandex3988.jpg"
+                                                 alt=""/>
+                                            <button class="btn btn-warning btn-sm rec-float-btn">Запись</button>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="text-black-50">
+                                                Вебинар
+                                            </div>
+                                            <div class="h5">
+                                                Как избежать ошибок
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-events swiper-slide">
+                                        <a href="#">
+                                            <img class="img-fluid events-img"
+                                                 src="https://yc-www-community-images.storage.yandexcloud.net/11.jpg"
+                                                 alt=""/>
+                                            <button class="btn btn-warning btn-sm rec-float-btn">Запись</button>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="text-black-50">
+                                                Меропрития
+                                            </div>
+                                            <div class="h5">
+                                                Речевые технологий в дейтсвий
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-events swiper-slide">
+                                        <a href="#">
+                                            <img class="img-fluid events-img"
+                                                 src="https://yc-www-community-images.storage.yandexcloud.net/481A9049.JPG"
+                                                 alt=""/>
+                                            <button class="btn btn-warning btn-sm rec-float-btn">Запись</button>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="text-black-50">
+                                                Вебинар
+                                            </div>
+                                            <div class="h5">
+                                                My Speech kit по продукту SpeechKit
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-events swiper-slide">
+                                        <a href="#">
+                                            <img class="img-fluid events-img"
+                                                 src="https://yc-www-community-images.storage.yandexcloud.net/481A9654.JPG"
+                                                 alt=""/>
+                                            <button class="btn btn-warning btn-sm rec-float-btn">Запись</button>
+                                        </a>
+                                        <div class="card-body">
+                                            <div class="text-black-50">
+                                                Меропрития
+                                            </div>
+                                            <div class="h5">
+                                                Развитие продукта в My SpeechKit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                                <!-- If we need scrollbar -->
+                                <!--<div class="swiper-scrollbar"></div>-->
+                            </div>
+                            <!--swiper-->
                         </div>
                     </div>
                     <div class="my-5">
@@ -679,21 +874,26 @@
         </div>
     </div>
 </main>
-<footer class="mb-4 fixed-bottom">
+<footer class="mb-4">
     <div class="container-fluid">
         <hr>
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="underFooter">
                     <div class="dropdown" style="display: inline-block; margin-right: 15px;">
-                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn border-0 bg-transparent" href="#" role="button" id="dropdownMenuLink"
+                           data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-globe"></i> Language
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li>Язык</li> <!--Language-->
-                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt="" class="img-fluid lang-img"></a> Русский</li>
-                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt="" class="img-fluid lang-img"></a> English</li>
+                            <li><a class="dropdown-item" href="#"><img src="img/russia24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> Русский
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img src="img/uk24.svg" alt=""
+                                                                       class="img-fluid lang-img"></a> English
+                            </li>
                         </ul>
                     </div>
                     <div style="display: inline-block; margin-right: 15px;">
