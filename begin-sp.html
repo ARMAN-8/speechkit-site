@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SpeechKit</title>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -19,6 +19,11 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <img src="img/navbar-logo.png" alt="" class="img-fluid topMenuLogo">
             <a class="navbar-brand" href="#">
                 <h5 class="serviceName">
@@ -58,7 +63,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 LEFT_MENU pt-5">
-                <div class="div-fixed position-fixed pt-4">
+                <div class="div-fixed position-fixed pt-4 bg-white" id="sidebarMenu"
+                     style="margin-left: 0;height: 90vh;">
                     <div class="">
                         <div class="sideBarMenu">
                             <div>
@@ -252,7 +258,7 @@
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 MAIN_PAGE pt-5" style="border-left: 1px solid #c4c4c4;">
-                <div class="pt-5" style="padding-left: 50px;">
+                <div class="">
                     <div class="my-4">
                         <h2>
                             <span>Yandex SpeechKit</span>
@@ -276,7 +282,8 @@
                         </p>
                     </div>
                     <div class="my-4">
-                        Для сервиса действует <a href="#" class="link-primary">соглашение об уровне обслуживания</a>. Уровень обслуживания сервиса определен
+                        Для сервиса действует <a href="#" class="link-primary">соглашение об уровне обслуживания</a>.
+                        Уровень обслуживания сервиса определен
                         в документе Уровень обслуживания Yandex SpeechKit.
                     </div>
                     <div class="row my-5">

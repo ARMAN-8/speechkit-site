@@ -344,6 +344,7 @@ a:hover {
     background: #dadada;
     color: #000;
 }
+
 .div-big-grey {
     background: #dadada;
     border-radius: 15px;
@@ -351,12 +352,13 @@ a:hover {
 }
 
 .notes-blue {
-    background: rgba(2,123,243,.08);
+    background: rgba(2, 123, 243, .08);
     display: flex;
     border-radius: 15px;
 }
+
 .notes-yellow {
-    background: rgba(255,136,0,.15);
+    background: rgba(255, 136, 0, .15);
     display: flex;
     border-radius: 15px;
 }
@@ -366,6 +368,21 @@ a:hover {
     padding-left: 12px;
     position: relative;
     font-size: 16px;
+}
+
+/*.nav-pills-billing {
+
+}*/
+
+.nav-item-billing {
+    background: #d9d9d9;
+    padding: 3px;
+    color: #000;
+}
+
+.nav-link-billing.active {
+    background: #fff!important;
+    color: #000!important;
 }
 
 /*footer  {
